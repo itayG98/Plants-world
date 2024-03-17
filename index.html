@@ -86,8 +86,8 @@
     </nav>
   </header>
   </header>
-  <main style="padding-top: 90px" class="p-2">
-    <section class="hero-section">Section 1</section>
+  <main style="padding: 100px 0 " >
+    <section class="hero-section"></section>
     <section class="catalog-section p-2">
       <div class="container">
         <h2 class="text-start">Plants Catalog</h2>
@@ -221,7 +221,7 @@
       </div>
     </section>
   </main>
-  <footer style="background-color: #DFEEE4;">
+  <footer style="background-color: #DFEEE4;" class="pb-5" >
     <div class="container  text-start ">
       <div class="row">
         <div class="col-lg-3 col-md-12 mb-3 col-10 ">
@@ -265,7 +265,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-12 mb-3 ">
+        <div class="col-lg-3 col-md-12 mb-3 col-12 ">
           <div class="card border-0" style="background-color: #DFEEE4;">
             <h1 class="fs-1 fw-bold">Follow Us</h1>
             <div class="row">
@@ -279,15 +279,21 @@
               </div>
             </div>
             <div class="row">
-              <div class=" col-12">
-                <div class="col-6">
-                  <img src="assets/" alt="Facebook">
-                </div>
-                <div class="col-6">
-                  <img src="assets/" alt="Instagram">
-                </div>
+              <div class="col-12">
+                <h1 class="fs-1 fw-bold">Newsletter</h1>
+                <form class="form">
+                  <h4 class="fs-6">Join us and get 15% off your first order</h4>
+                  <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="Enter your email" required>
+                  </div>
+                  <button type="submit" class="btn btn-primary w-100 mb-3">Join Newsletter</button>
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="agreementCheck" required>
+                    <label class="form-check-label" for="agreementCheck">i’ve read the terms and conditions</label>
+                  </div>
+                </form>
               </div>
-            </div>
+            </div>            
           </div>
         </div>
       </div>
