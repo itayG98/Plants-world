@@ -2,10 +2,15 @@ h1 {
   text-transform: capitalize;
   font-size: 32px;
 }
+nav,
+nav ul {
+  background-color: white; /* Set the background color of the nav to white */
+}
 .hero-section {
   background-image: url("/assets/images/Rectangle 2.png");
   height: 597px;
 }
+
 .nav-link img:hover {
   transform: scale(1.1); /* Increase size by 10% */
   font-weight: bold;
