@@ -2,9 +2,10 @@ h1 {
   text-transform: capitalize;
   font-size: 36px;
 }
+header,
 nav,
 nav ul {
-  background-color: white;
+  background-color: rgb(248, 249, 250);
 }
 p.hero-text {
   font-size: 30px;
