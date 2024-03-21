@@ -1,3 +1,11 @@
+.open-sans-<uniquifier> {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
 h1 {
   text-transform: capitalize;
   font-size: 36px;
@@ -13,9 +21,74 @@ p.hero-text {
 
 .hero-section {
   height: 597px;
+  transition: background-image 1s ease-in;  /*Animation settings */
 }
 
 .nav-link img:hover {
   transform: scale(1.1); /* Increase size by 10% */
   font-weight: bold;
 }
+a.blue-nav{
+ color: #002585;
+font-size: 20px;
+}
+
+h1.big-sub{font-size: 50px;
+}
+
+button.btn { background-color:#3D60B9;
+	color: white;
+	height: 50px;
+	border-radius: 0px;
+	font-size: 22px;
+}
+
+button.btn:hover { 
+	background-color:white;
+	color: #3D60B9;
+	height: 50px;
+	border-radius: 0px;
+	font-size: 22px;
+}
+
+input.form-control{
+	height: 50px;
+	border-radius: 0px;
+}
+#scrollToTopBtn {
+  margin: auto;
+  display: none; /* Initially hide the button */
+  border: none; /* Remove default border */
+  border-radius: 5px; /
+}
+#hamburgerIcon{
+	width: 30px;
+	height: 30px;
+}
+
+
+/*This css apply for the preloader*/
+
+main,footer {
+  opacity: 0; /* Initially hide the body content */
+  transition: opacity 0.5s ease-in-out; /* Add a smooth transition */
+}
+
+.preloader {
+  position: fixed; /* Keep it on top of the page */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white; /* Semi-transparent background */
+  display: flex; /* Center the preloader image */
+  justify-content: center;
+  align-items: center;
+}
+
+.preloader img {
+  /* Adjust size and styling as needed */
+  width: 100px;
+  height: 100px;
+}
+

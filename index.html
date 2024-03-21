@@ -9,6 +9,8 @@
   <meta name="description" content="Plants" />
   <!-- image -->
   <meta itemprop="image" src="assets/avatar.webp" />
+	<!--Jquery-->
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <!--CSS links-->
   <link rel="stylesheet" type="text/css" href="css/style.css" />
   <!--Fontawsome-->
@@ -19,35 +21,40 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+	<!--Font-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+	<!--javascript-->
+	<script src="scripts/script.js"></script>
   <!--Title-->
-  <title>Plan B</title>
+  <title>Plant B</title>
 </head>
 
 <body>
   <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top mb-2">
-
       <a class="navbar-brand d-flex justify-content-lg-center" href="#">
         <img src="assets/icons/logo.svg" alt="" />
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      <button class="navbar-toggler b-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+		      <img id="hamburgerIcon" class="b-0" src="assets/side_menu.gif" alt="Menu">
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <div class="container-fluid">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center">
-            <li class="nav-item">
-              <a class="nav-link">Our Plants</a>
+            <li class="nav-item px-4">
+              <a class="nav-link blue-nav">Our Plants</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link">Plants For Businesses</a>
+            <li class="nav-item px-4">
+              <a class="nav-link blue-nav">Plants For Businesses</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link">Blog</a>
+            <li class="nav-item px-4">
+              <a class="nav-link blue-nav">Blog</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link">Contact Us</a>
+            <li class="nav-item px-4">
+              <a class="nav-link blue-nav">Contact Us</a>
             </li>
           </ul>
         </div>
@@ -83,16 +90,23 @@
         </li>
       </ul>
     </nav>
-  </header>
-  </header>
+	</header>
+ 	    <div class="preloader">  <img src="assets/preloader.gif" alt="Loading..." /> </div>
+
   <main style="padding-top: 90px " >
-    <section class="hero-section text-start p-2" style="background-image: url('assets/images/Rectangle2.png')">
+
+    <section class="hero-section text-start p-2" style="background-image: url('assets/images/slide00.png')">
       <div class="container">
         <div class="row pt-5">
           <div class="col-lg-6 text-start justify-content-start">
-            <h1 class="fw-bold text-white">Fill your home with plants</h1>
-            <p class="text-white hero-text">Pick the right plant for you, and order with free delivery to your address.</p>
-            <a href="#" class="btn btn-primary d-block w-50">Our plants</a>
+            <div> 
+				<h1 class="fw-bold text-white big-sub">Fill your home</h1>
+				<h1 class="fw-bold text-white big-sub">with plants</h1>
+			  </div>
+			  <div><p class="text-white hero-text fs-5 mb-0">Pick The Right Plant For You, And Order</p>
+			  </div>
+			  <div><p class="text-white hero-text fs-5">With Free Delivery To Your Address.</p></div>
+            <button class="btn d-block w-50">Our plants</button>
           </div>
         </div>
       </div>
@@ -101,11 +115,11 @@
     
     <section class="catalog-section text-start p-2">
       <div class="container">
-        <h2 class="text-start">Plants Catalog</h2>
+        <h2 class="text-start mt-5 mb-3">Plants Catalog</h2>
         <div class="row ">
           <div class="col-lg-3 col-md-6 mb-4 col-6">
             <div class="card">
-              <img src="assets/images/monsteradeliciosa.png" class="card-img-top img-fluid" alt="Monstera Deliciosa">
+              <img src="assets/images/monsteradeliciosa.png" class="card-img-top img-fluid">
               <div class="card-body d-flex justify-content-between">
                 <h3 class="fs-6 p-1">Monstera Deliciosa</h3>
                 <p class="fs-6 p-1">32$</p>
@@ -114,16 +128,16 @@
           </div>
           <div class="col-lg-3 col-md-6 mb-4 col-6">
             <div class="card">
-              <img src="assets/images/neonpothos.png" class="card-img-top img-fluid" alt="Monstera Deliciosa">
+              <img src="assets/images/neonpothos.png" class="card-img-top img-fluid" >
               <div class="card-body d-flex justify-content-between">
-                <h3 class="fs-6 p-1">Neon pothos</h3>
+                <h3 class="fs-6 p-1">Neon Pothos</h3>
                 <p class="fs-6 p-1">32$</p>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 mb-4 col-6">
             <div class="card">
-              <img src="assets/images/monsteramonkey.png" class="card-img-top img-fluid" alt="Monstera Deliciosa">
+              <img src="assets/images/monsteramonkey.png" class="card-img-top img-fluid">
               <div class="card-body d-flex justify-content-between">
                 <h3 class="fs-6 p-1">Monstera Monkey</h3>
                 <p class="fs-6 p-1">25$</p>
@@ -132,7 +146,7 @@
           </div>
           <div class="col-lg-3 col-md-6 mb-4 col-6">
             <div class="card">
-              <img src="assets/images/jadepothos.png" class="card-img-top img-fluid" alt="Monstera Deliciosa">
+              <img src="assets/images/jadepothos.png" class="card-img-top img-fluid" >
               <div class="card-body d-flex justify-content-between">
                 <h3 class="fs-6 p-1">Jade Pothos</h3>
                 <p class="fs-6 p-1">32$</p>
@@ -141,7 +155,7 @@
           </div>
           <div class="col-lg-3 col-md-6 mb-4 col-6">
             <div class="card">
-              <img src="assets/images/PhilodendronBrasil.png" class="card-img-top img-fluid" alt="Monstera Deliciosa">
+              <img src="assets/images/PhilodendronBrasil.png" class="card-img-top img-fluid" >
               <div class="card-body d-flex justify-content-between">
                 <h3 class="fs-6 p-1">Philodendron Brasil</h3>
                 <p class="fs-6 p-1">32$</p>
@@ -150,7 +164,7 @@
           </div>
           <div class="col-lg-3 col-md-6 mb-4 col-6">
             <div class="card">
-              <img src="assets/images/hoyacarnosa.png" class="card-img-top img-fluid" alt="Monstera Deliciosa">
+              <img src="assets/images/hoyacarnosa.png" class="card-img-top img-fluid" >
               <div class="card-body d-flex justify-content-between">
                 <h3 class="fs-6 p-1">Hoya Carnosa</h3>
                 <p class="fs-6 p-1">18$</p>
@@ -160,7 +174,7 @@
           </div>
           <div class="col-lg-3 col-md-6 mb-4 col-6">
             <div class="card">
-              <img src="assets/images/philodendronScandes.png" class="card-img-top img-fluid" alt="Monstera Deliciosa">
+              <img src="assets/images/philodendronScandes.png" class="card-img-top img-fluid" >
               <div class="card-body d-flex justify-content-between">
                 <h3 class="fs-6 p-1">Philodendron Scandes</h3>
                 <p class="fs-6 p-1">32$</p>
@@ -169,7 +183,7 @@
           </div>
           <div class="col-lg-3 col-md-6 mb-4 col-6">
             <div class="card">
-              <img src="assets/images/hoyamonalisa.png" class="card-img-top img-fluid" alt="Monstera Deliciosa">
+              <img src="assets/images/hoyamonalisa.png" class="card-img-top img-fluid" >
               <div class="card-body d-flex justify-content-between">
                 <h3 class="fs-6 p-1">Hoya Mona Lisa</h3>
                 <p class="fs-6 p-1">32$</p>
@@ -181,13 +195,13 @@
     </section>
     <section class="about-us-section text-start p-2">
       <div class="container text-start">
-        <h2 class="text-start">About us</h2>
+        <h2 class="text-start mt-5 mb-3">About us</h2>
         <div class="row">
           <div class="col-lg-4 col-md-4 mb-3 col-12">
             <div class="card border-0">
               <div class="row g-0">
                 <div class="col-6">
-                  <img src="assets/icons/heart.svg" class="card-img-top img-fluid" alt="Monstera Deliciosa">
+                  <img src="assets/icons/heart2.svg" class="card-img-top img-fluid" >
                 </div>
                 <div class="col-10">
                   <div class="card-body">
@@ -202,7 +216,7 @@
             <div class="card border-0">
               <div class="row g-0">
                 <div class="col-6">
-                  <img src="assets/icons/truck.svg" class="card-img-top img-fluid" alt="Monstera Deliciosa">
+                  <img src="assets/icons/truck.svg" class="card-img-top img-fluid" >
                 </div>
                 <div class="col-10">
                   <div class="card-body">
@@ -217,7 +231,7 @@
             <div class="card border-0">
               <div class="row g-0">
                 <div class="col-6">
-                  <img src="assets/icons/leaf.svg" class="card-img-top img-fluid" alt="Monstera Deliciosa">
+                  <img src="assets/icons/leaf.svg" class="card-img-top img-fluid" >
                 </div>
                 <div class="col-10">
                   <div class="card-body">
@@ -232,45 +246,45 @@
       </div>
     </section>
   </main>
-  <footer style="background-color: #DFEEE4;" class="pb-4 pt-0" >
+  <footer style="background-color: #DFEEE4;" class="pb-4 pt-4" >
     <div class="container  text-start ">
       <div class="row">
         <div class="col-lg-3 col-md-12 mb-3 col-10 ">
           <div class="card border-0" style="background-color: #DFEEE4;">
-            <h1 class="fs-1 fw-bold">Essential Information</h1>
+            <h1 class="fs-4 fw-bold">Essential Information</h1>
             <div class="row">
               <div class=" col-12">
-                <h4 class="">Shipping and delivery</h4>
-                <h4 class="">Plants For Businesses</h4>
-                <h4 class="">Q&A</h4>
-                <h4 class="">Blog</h4>
-                <h4 class="">Accessibility</h4>
-                <h4 class="">Contact Us</h4>
+                <h4 class="fs-6">Shipping and delivery</h4>
+                <h4 class="fs-6">Plants For Businesses</h4>
+                <h4 class="fs-6">Q&A</h4>
+                <h4 class="fs-6">Blog</h4>
+                <h4 class="fs-6">Accessibility</h4>
+                <h4 class="fs-6">Contact Us</h4>
               </div>
             </div>
           </div>
         </div>
         <div class="col-lg-3 col-md-12 mb-3 ">
           <div class="card border-0" style="background-color: #DFEEE4;">
-            <h1 class="fs-1 fw-bold">About Us</h1>
+            <h1 class="fs-4 fw-bold">About Us</h1>
             <div class="row">
               <div class=" col-12">
-                <h4 class="">Who We Are</h4>
-                <h4 class="">Giftcards</h4>
-                <h4 class="">Our Plants</h4>
+                <h4 class="fs-6">Who We Are</h4>
+                <h4 class="fs-6">Giftcards</h4>
+                <h4 class="fs-6">Our Plants</h4>
               </div>
             </div>
           </div>
         </div>
         <div class="col-lg-3 col-md-12 mb-3 ">
           <div class="card border-0" style="background-color: #DFEEE4;">
-            <h1 class="fs-1 fw-bold">Contact Us</h1>
+            <h1 class="fs-4 fw-bold">Contact Us</h1>
             <div class="row">
               <div class=" col-12">
-                <h4 class="">+1-485-3829260</h4>
-                <h4 class="">contact@gmail.com</h4>
-                <h4 class="">sunday-thursday 9:00-19:00</h4>
-                <h4 class="">friday 9:00-13:00</h4>
+                <h4 class="fs-6">+1-485-3829260</h4>
+                <h4 class="fs-6">contact@gmail.com</h4>
+                <h4 class="fs-6">sunday-thursday 9:00-19:00</h4>
+                <h4 class="fs-6">friday 9:00-13:00</h4>
               </div>
 
             </div>
@@ -278,38 +292,65 @@
         </div>
         <div class="col-lg-3 col-md-12 mb-3 col-12 ">
           <div class="card border-0" style="background-color: #DFEEE4;">
-            <h1 class="fs-1 fw-bold ">Follow Us</h1>
+            <h1 class="fs-4 fw-bold ">Follow Us</h1>
             <div class="row">
-              <div class=" col-12 pb-2">
-                <div class="col-6">
-                  <img src="assets/" alt="Facebook">
-                </div>
-                <div class="col-6">
-                  <img src="assets/" alt="Instagram">
-                </div>
+                <div class="col-6 px-1">
+                  <img  class="image-fluid m-0" src="assets/icons/facebook.svg" alt="Facebook">
+                  <img  class="image-fluid m-0"  src="assets/icons/instagram.svg" alt="Instagram">
               </div>
             </div>
             <div class="row">
               <div class="col-12 pb-2">
-                <h1 class="fs-1 fw-bold">Newsletter</h1>
+                <h1 class="fs-4 fw-bold mt-4">Newsletter</h1>
                 <form class="form">
                   <h4 class="fs-6">Join us and get 15% off your first order</h4>
                   <div class="mb-3">
-                    <input type="email" class="form-control" placeholder="Enter your email" required>
+                    <input type="email" class="form-control" placeholder="Enter your email" >
                   </div>
-                  <button type="submit" class="btn btn-primary w-100 mb-3">Join Newsletter</button>
+                  <button type="submit" class="btn w-100 mb-3">Join Newsletter</button>
                   <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="agreementCheck" required>
+                    <input type="checkbox" class="form-check-input" id="agreementCheck" >
                     <label class="form-check-label" for="agreementCheck">i’ve read the terms and conditions</label>
                   </div>
                 </form>
+				  
+				  <!-- modals -->
+				  
+				<div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+				  <div class="modal-dialog ">
+					<div class="modal-content ">
+					  <div class="modal-header border-0 bg-success text-white">
+						<h5 class="modal-title" id="successModalLabel">Success!</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					  </div>
+					  <div class="modal-body">
+						<p>You have successfully subscribed to our newsletter!</p>
+					  </div>
+					</div>
+				  </div>
+				</div>
+
+				<div class="modal fade " id="failureModal" tabindex="-1" aria-labelledby="failureModalLabel" aria-hidden="true">
+				  <div class="modal-dialog ">
+					<div class="modal-content">
+					  <div class="modal-header  border-0 bg-danger text-white">
+						<h5 class="modal-title  " id="failureModalLabel">Please insert your email addres</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					  </div>
+					  <div class="modal-body ">
+						<ul id="errorList"></ul>
+					  </div>
+					</div>
+				  </div>
+				</div>
               </div>
             </div>            
           </div>
         </div>
+		  		   	<button class="bg-transparent mb-lg-1 mb-md-4 mb-5 p-2 fs-1"  id="scrollToTopBtn">⬆️</button>
       </div>
     </div>
-  </footer>
+	</footer>
 </body>
 
 </html>
