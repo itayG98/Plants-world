@@ -1,2 +1,2 @@
 ## Social network of plants lovers
-this is a boostrap excercise
+This is a boostrap excercise helpin a non-coder friend
